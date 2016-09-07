@@ -1,0 +1,39 @@
+{
+  "name": "px",
+  "version": "1.0.5",
+  "authors": [
+    "predix experience developers"
+  ],
+  "description": "Predix Experience js library",
+  "main": "dist/px.min.js",
+  "keywords": [
+    "px",
+    "predix",
+    "predix",
+    "experience"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "test-target"
+  ],
+  "devDependencies": {
+    "es6-promise": "https://github.com/jakearchibald/es6-promise.git",
+    "angular": "~1.3.16",
+    "angular-mocks": "~1.3.16",
+    "jquery": "2.1.3"
+  },
+  "license": "GE",
+  "homepage": "predix.io",
+  "_release": "1.0.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.5",
+    "commit": "5a8ccae6ef3172b30c0fa56e33c7f28bbe3858ae"
+  },
+  "_source": "https://github.com/predixdev/px.git",
+  "_target": "v1.0.5",
+  "_originalSource": "https://github.com/predixdev/px.git"
+}

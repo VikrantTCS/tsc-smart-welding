@@ -1,0 +1,36 @@
+[submodule "ext-interface"]
+	path = ext-interface
+	url = https://github.build.ge.com/adoption/ext-interface.git
+	branch = master
+[submodule "predix-microservice-cf-jsr"]
+	path = predix-microservice-cf-jsr
+	url = https://github.build.ge.com/adoption/predix-microservice-cf-jsr.git
+	branch = master
+[submodule "predix-microservice-cf-spring"]
+	path = predix-microservice-cf-spring
+	url = https://github.build.ge.com/adoption/predix-microservice-cf-spring.git
+	branch = master
+[submodule "predix-rest-client"]
+	path = predix-rest-client
+	url = https://github.build.ge.com/adoption/predix-rest-client.git
+	branch = master
+[submodule "asset-bootstrap"]
+	path = asset-bootstrap
+	url = https://github.build.ge.com/adoption/asset-bootstrap.git
+	branch = master
+[submodule "timeseries-bootstrap"]
+	path = timeseries-bootstrap
+	url = https://github.build.ge.com/adoption/timeseries-bootstrap.git
+	branch = master
+[submodule "predix-websocket-client"]
+	path = predix-websocket-client
+	url = https://github.build.ge.com/adoption/predix-websocket-client.git
+	branch = master
+[submodule "rabbitmq-consumer-template"]
+	path = rabbitmq-consumer-template
+	url = https://github.build.ge.com/adoption/rabbitmq-consumer-template.git
+	branch = master
+[submodule "rabbitmq-producer-template"]
+	path = rabbitmq-producer-template
+	url = https://github.build.ge.com/adoption/rabbitmq-producer-template.git
+	branch = master

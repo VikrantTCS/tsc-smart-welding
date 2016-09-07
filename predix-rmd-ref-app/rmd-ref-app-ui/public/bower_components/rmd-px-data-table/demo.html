@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>px-data-table Demo</title>
+    <!-- Requires Webcomponents.js polyfill is provided by the page for browsers that don't support html imports -->
+    <script src="../webcomponentsjs/webcomponents-lite.min.js"></script>
+    <!-- Import custom element. Note: see comment about relative paths to dependencies in the *.html file referenced below -->
+    <!-- <link rel="import" href="px-data-table.html" /> -->
+    <link rel="import" href="px-data-table.html" />
+    <link rel="import" href="../iron-ajax/iron-ajax.html" />
+    <link rel="import" href="../px-card/px-card.html" />
+
+    <script>
+      pxDataTableBehaviors = {
+        sort: function(a, b) {
+          return this.descending
+          ? (a.value < b.value ? 1 : -1)
+          : (a.value > b.value ? 1 : -1);
+        }
+      };
+    </script>
+
+    <style>
+      body{
+        background-color: gray;
+      }
+    </style>
+  </head>
+
+  <body unresolved>
+    <template is="dom-bind">
+      <iron-ajax url="contacts.json" last-response="{{data}}" auto></iron-ajax>
+
+      <px-card header-text="Data Table">
+        <px-data-table striped table-data="{{data}}"></px-data-table>
+      </px-card>
+
+      <px-card header-text="Data Table2">
+        <px-data-table table-data="{{data}}"></px-data-table>
+      </px-card>
+
+      <px-card header-text="Data Table3">
+        <px-data-table table-columns table-data="{{data}}"></px-data-table>
+      </px-card>
+
+      <px-card header-text="Data Table4">
+        <px-data-table table-rows table-data="{{data}}"></px-data-table>
+      </px-card>
+
+    </template>
+  </body>
+
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://predix.ge.com/entity/timeseries/tags"
+	elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:tagsrequest="http://predix.ge.com/entity/timeseries/tags">
+
+
+	<element name="TagsList">
+		<complexType>
+			<sequence>
+				<element name="results" type="string" minOccurs="0"
+					maxOccurs="unbounded"></element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>

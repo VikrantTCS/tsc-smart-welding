@@ -1,0 +1,31 @@
+{
+  "name": "rmd-simple-line-chart",
+  "version": "0.0.6",
+  "main": [
+    "px-simple-line-chart.html"
+  ],
+  "ignore": [
+    ".*",
+    "npm-debug.log",
+    "Gruntfile.js",
+    "sass",
+    "bower_components",
+    "node_modules",
+    "test"
+  ],
+  "dependencies": {
+    "polymer": "~1.0.0",
+    "px-theme": "https://github.com/predixdev/px-theme.git#~0.3.13",
+    "d3": "~3.5.6"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#~v1.0.0",
+    "px-starter-kit-design": "https://github.com/predixdev/px-starter-kit-design.git#~0.4.0",
+    "px-slider": "https://github.com/predixdev/px-slider.git",
+    "iron-ajax": "PolymerElements/iron-ajax#~1.0.4",
+    "web-component-tester": "Polymer/web-component-tester#~3.3.21"
+  },
+  "resolutions": {
+    "polymer": "~1.0.0"
+  }
+}

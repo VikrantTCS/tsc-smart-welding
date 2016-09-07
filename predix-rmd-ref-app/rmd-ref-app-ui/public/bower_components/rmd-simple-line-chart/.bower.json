@@ -1,0 +1,40 @@
+{
+  "name": "rmd-simple-line-chart",
+  "main": [
+    "px-simple-line-chart.html"
+  ],
+  "ignore": [
+    ".*",
+    "npm-debug.log",
+    "Gruntfile.js",
+    "sass",
+    "bower_components",
+    "node_modules",
+    "test"
+  ],
+  "dependencies": {
+    "polymer": "~1.0.0",
+    "px-theme": "https://github.com/predixdev/px-theme.git#~0.3.13",
+    "d3": "~3.5.6"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#~v1.0.0",
+    "px-starter-kit-design": "https://github.com/predixdev/px-starter-kit-design.git#~0.4.0",
+    "px-slider": "https://github.com/predixdev/px-slider.git",
+    "iron-ajax": "PolymerElements/iron-ajax#~1.0.4",
+    "web-component-tester": "Polymer/web-component-tester#~3.3.21"
+  },
+  "resolutions": {
+    "polymer": "~1.0.0"
+  },
+  "homepage": "https://github.com/predixdev/rmd-simple-line-chart",
+  "_release": "056f71cd15",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "056f71cd1545afdd1288420d36c7a0e4727a1207"
+  },
+  "_source": "https://github.com/predixdev/rmd-simple-line-chart.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/predixdev/rmd-simple-line-chart.git"
+}

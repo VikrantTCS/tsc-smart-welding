@@ -1,0 +1,97 @@
+<!--
+    Relative paths assume component is being run from inside an app or another component, where dependencies are flat
+    siblings. When this component is run from its own repo (e.g. ui tests, examples), we assume the server is started with
+    'grunt depserve' (or similar server setup) to enable correct finding of bower dependencies for local runs
+    See https://github.sw.ge.com/jreichenberg/grunt-dep-serve#why-do-we-need-this
+-->
+<link rel="import" href="../polymer/polymer.html" />
+<link rel="import" href="../google-analytics/google-analytics.html">
+<script src="pxDataTableBehaviors.js"></script>
+<link rel="import" href="aha-table.html">
+
+<!--
+Element providing solution to no problem in particular. As a simple, increments a counter when clicked.
+
+##### Usage
+
+    <px-data-table counter-value="1">Hi</px-data-table>
+
+@element px-data-table
+@blurb Element providing implementing data table behaviour.
+@homepage index.html
+@demo demo.html
+-->
+<dom-module id="px-data-table">
+  <link rel="import" type="css" href="css/px-data-table.css" />
+  <link rel="import" href="../px-theme/px-theme.html"/>
+
+  <template>
+    <google-analytics code="UA-35812695-2"></google-analytics>
+    <div class="flex">
+      <div class="flex__item flex--right btn-group">
+        <button on-click="filterButtonClicked" class="btn btn--bare u-p-"><i class="fa fa-filter"></i></button>
+      </div>
+    </div>
+    <div class="flex">
+      <aha-table  searchable="{{_isFiltered}}"
+                  striped="{{striped}}"
+                  table-columns="{{tableColumns}}"
+                  table-rows="{{tableRows}}"
+                  id="dataTable"></aha-table>
+    </div>
+  </template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: 'px-data-table',
+
+    /**
+     * Properties block, expose attribute values to the DOM via 'reflect'
+     *
+     * @property properties
+     * @type Object
+     */
+    properties: {
+      tableData: {
+        type: Array,
+        value: function(){
+          return [];
+        },
+        observer: '_tableDataChanged',
+        notify: true
+      },
+      //striped: if table row is striped
+			striped: {
+				type: Boolean,
+				value: false
+			},
+      //_isFiltered: if table has column filtering capability turned on.
+      _isFiltered: {
+				type: Boolean,
+				value: false
+			},
+      tableColumns:{
+				type: Boolean,
+				value: false
+			},
+      tableRows:{
+				type: Boolean,
+				value: false
+			}
+    },
+
+    attached: function() {
+      this.$.dataTable.addEventListener('after-td-click', function(e) {
+        console.log('after-td-click ' + JSON.stringify(e.detail) );
+      });
+    },
+
+    _tableDataChanged: function(changeRecord){
+      this.$.dataTable.data = this.tableData;
+    },
+    filterButtonClicked: function(){
+      this._isFiltered = !this._isFiltered;
+    }
+  });
+</script>

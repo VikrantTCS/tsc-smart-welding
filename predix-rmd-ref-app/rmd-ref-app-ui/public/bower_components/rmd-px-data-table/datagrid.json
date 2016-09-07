@@ -1,0 +1,183 @@
+{
+    "tableData": [
+        {
+            "meter": "crank-frame-compressionratio",
+            "meterUri": "/meter/crank-frame-compressionratio",
+            "meter_isKpi": true,
+            "meter_isPM": true,
+            "alertStatus": true,
+            "alertStatusType": null,
+            "currentValue": 1,
+            "unit": null,
+            "lastMeterReading": 1440105102345,
+            "thresholdMin": 2.5,
+            "thresholdMax": 3,
+            "deltaThreshold": -60,
+            "deltaThresholdColor": "RED",
+            "deltaThresholdLevel": "LOW",
+            "html": "<b class='foo'>BOLD</b>"
+        },
+        {
+            "meter": "crank-frame-dischargepressure",
+            "meterUri": "/meter/crank-frame-dischargepressure",
+            "meter_isKpi": true,
+            "meter_isPM": true,
+            "alertStatus": true,
+            "alertStatusType": null,
+            "currentValue": 0,
+            "unit": "psi",
+            "lastMeterReading": 1440105102361,
+            "thresholdMin": 0,
+            "thresholdMax": 23,
+            "deltaThreshold": 0,
+            "deltaThresholdColor": "GREEN",
+            "deltaThresholdLevel": "LOW"
+        },
+        {
+            "meter": "crank-frame-maxpressure",
+            "meterUri": "/meter/crank-frame-maxpressure",
+            "meter_isKpi": false,
+            "meter_isPM": true,
+            "alertStatus": false,
+            "alertStatusType": null,
+            "currentValue": 25.918974593728542,
+            "unit": "psi",
+            "lastMeterReading": 1440105098252,
+            "thresholdMin": 22,
+            "thresholdMax": 26,
+            "deltaThreshold": 2.025635156786443,
+            "deltaThresholdColor": "GREEN",
+            "deltaThresholdLevel": "HIGH"
+        },
+        {
+            "meter": "crank-frame-minpressure",
+            "meterUri": "/meter/crank-frame-minpressure",
+            "meter_isKpi": false,
+            "meter_isPM": true,
+            "alertStatus": null,
+            "alertStatusType": null,
+            "currentValue": 0,
+            "unit": "psi",
+            "lastMeterReading": 1440105098268,
+            "thresholdMin": null,
+            "thresholdMax": null,
+            "deltaThreshold": "NaN",
+            "deltaThresholdColor": "GREEN",
+            "deltaThresholdLevel": "HIGH"
+        },
+        {
+            "meter": "crank-frame-suctionpressure",
+            "meterUri": "/meter/crank-frame-suctionpressure",
+            "meter_isKpi": true,
+            "meter_isPM": true,
+            "alertStatus": true,
+            "alertStatusType": null,
+            "currentValue": 0.2792401007095445,
+            "unit": "psi",
+            "lastMeterReading": 1440105101001,
+            "thresholdMin": 0,
+            "thresholdMax": 0.21,
+            "deltaThreshold": -32.97147652835454,
+            "deltaThresholdColor": "RED",
+            "deltaThresholdLevel": "HIGH"
+        },
+        {
+            "meter": "crank-frame-temperature",
+            "meterUri": "/meter/crank-frame-temperature",
+            "meter_isKpi": false,
+            "meter_isPM": true,
+            "alertStatus": true,
+            "alertStatusType": null,
+            "currentValue": 80.99794003204394,
+            "unit": "F",
+            "lastMeterReading": 1440105102441,
+            "thresholdMin": 65,
+            "thresholdMax": 80,
+            "deltaThreshold": -1.247425040054928,
+            "deltaThresholdColor": "RED",
+            "deltaThresholdLevel": "HIGH"
+        },
+        {
+            "meter": "crank-frame-velocity",
+            "meterUri": "/meter/crank-frame-velocity",
+            "meter_isKpi": true,
+            "meter_isPM": true,
+            "alertStatus": false,
+            "alertStatusType": null,
+            "currentValue": 0.019081406881818877,
+            "unit": "m/s",
+            "lastMeterReading": 1440105102425,
+            "thresholdMin": 0,
+            "thresholdMax": 0.07,
+            "deltaThreshold": 27.25915268831268,
+            "deltaThresholdColor": "GREEN",
+            "deltaThresholdLevel": "LOW"
+        }
+    ],
+    "columns": [
+        {
+            "name": "meter",
+            "type": "string",
+            "inputType": "text",
+            "inputSize": 25,
+            "label": "Meter Name",
+            "uom": null
+        },
+        {
+            "name": "alertStatus",
+            "type": "string",
+            "inputType": "text",
+            "inputSize": 20,
+            "label": "Alert Status",
+            "uom": null
+        },
+        {
+            "name": "currentValue",
+            "type": "number",
+            "inputType": "text",
+            "inputSize": 20,
+            "label": "Current value",
+            "uom": null
+        },
+        {
+            "name": "unit",
+            "type": "number",
+            "inputType": "text",
+            "inputSize": 10,
+            "label": "Units",
+            "uom": null
+        },
+        {
+            "name": "lastMeterReading",
+            "type": "string",
+            "inputType": "text",
+            "inputSize": 10,
+            "label": "Last Meter Reading",
+            "uom": null
+        },
+        {
+            "name": "thresholdMin",
+            "type": "number",
+            "inputType": "text",
+            "inputSize": 10,
+            "label": "Threshold Minimum",
+            "uom": null
+        },
+        {
+            "name": "thresholdMax",
+            "type": "number",
+            "inputType": "text",
+            "inputSize": 10,
+            "label": "Threshold Maximum",
+            "uom": null
+        },
+        {
+            "name": "deltaThreshold",
+            "type": "string",
+            "inputType": "text",
+            "inputSize": 25,
+            "label": "Delta Threshold ",
+            "uom": null
+        }
+    ]
+}

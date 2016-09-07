@@ -1,0 +1,21 @@
+---
+applications:
+  - name: template-rmd-ref-app
+    buildpack: predix_openresty_buildpack
+    path: dist
+    memory: 64M
+    stack: cflinuxfs2
+    services:
+            - tcs-smart-welding-redis
+            - tcs-smart-welding-asset
+            - tcs-smart-welding-time-series
+            - tcs-smart-welding-uaa
+    env:
+      UAA_SERVER_URL: https://6e13f008-7e1e-49b7-8699-21cf6ff03506.predix-uaa.run.aws-usw02-pr.ice.predix.io
+      assetUrl: https://predix-asset.run.aws-usw02-pr.ice.predix.io
+      assetZoneId: 4155369a-0abe-4311-afdd-09b066e23caa
+      timeSeriesUrl: https://time-series-store-predix.run.aws-usw02-pr.ice.predix.io/v1/datapoints
+      timeSeriesZoneId: 7afa2d5d-94a1-4085-ad77-c41e9106a432
+      predix_oauth_clientId : YXBwX2NsaWVudF9pZDpzZWNyZXQ=
+      RMD_DATASOURCE_URL: https://tcs-smart-welding-rmd-datasource.run.aws-usw02-pr.ice.predix.io
+      LIVE_DATA_WS_URL: wss://tcs-smart-welding-websocket-server.run.aws-usw02-pr.ice.predix.io

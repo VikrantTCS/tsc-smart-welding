@@ -1,0 +1,21 @@
+git status
+pwd
+cd asset-bootstrap
+git checkout develop
+cd ../ext-interface
+git checkout  develop
+cd ../predix-microservice-cf-jsr
+git checkout  develop
+cd ../predix-microservice-cf-spring
+git checkout  develop
+cd ../predix-rest-client
+git checkout  develop
+cd ../predix-websocket-client
+git checkout  develop
+cd ../rabbitmq-consumer-template
+git checkout  develop
+cd ../rabbitmq-producer-template
+git checkout  develop
+cd ../timeseries-bootstrap
+git checkout  develop
+

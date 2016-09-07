@@ -1,0 +1,32 @@
+#inherit: base-manifest.yml
+applications:
+  - name: template-rmd-datasource
+    path: target/rmd-datasource-2.0.2.jar
+    memory: 1GB
+    services:
+        - tcs-smart-welding-asset
+        - tcs-smart-welding-time-series
+        - tcs-smart-welding-uaa
+        - tcs-smart-welding-acs
+
+env:
+    predix_asset_name: tcs-smart-welding-asset
+    predix_timeseries_name : tcs-smart-welding-time-series
+    predix_oauth_restHost : 6e13f008-7e1e-49b7-8699-21cf6ff03506.predix-uaa.run.aws-usw02-pr.ice.predix.io
+    predix_oauth_clientId : app_client_id:secret
+    predix_timeseries_connectionTimeout : 5000
+    predix_asset_connectionTimeout : 5000
+    predix_rest_socketTimeout : 5000
+    predix_rest_poolMaxSize: 200
+    predix_wspool_maxIdle : 5
+    predix_wspool_maxActive : 5
+    predix_wspool_maxWait : 8000
+    predix_wspool_maxInstances : 5
+    
+    #used by predix acs-spring-security-extensions
+    accessTokenEndpointUrl : https://6e13f008-7e1e-49b7-8699-21cf6ff03506.predix-uaa.run.aws-usw02-pr.ice.predix.io/oauth/token
+    clientId : app_client_id
+    clientSecret: secret
+    #used by predix uaa-token-lib
+    trustedIssuerIdsRegexPattern : ^https://(.*\\.)?6e13f008-7e1e-49b7-8699-21cf6ff03506.predix-uaa.run.aws-usw02-pr.ice.predix.io/oauth/token$
+    JAVA_DOCS_URL : http://predixdev.github.io/rmd-datasource

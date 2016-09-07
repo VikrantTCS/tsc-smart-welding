@@ -1,0 +1,24 @@
+---
+applications:
+  - name: template-data-seed-service
+    buildpack: java_buildpack
+    path: target/data-seed-service-2.0.2.jar	
+    timeout: 120
+    services:
+      - tcs-smart-welding-asset
+      - tcs-smart-welding-uaa
+      - tcs-smart-welding-acs
+
+env:
+    predix_asset_name : tcs-smart-welding-asset
+    SPRING_PROFILES_ACTIVE : cloud,clouddev
+    predix_userName : app_admin_1
+    predix_password : app_admin_1
+    predix_oauth_restHost : 6e13f008-7e1e-49b7-8699-21cf6ff03506.predix-uaa.run.aws-usw02-pr.ice.predix.io
+    predix_oauth_restPort : 80
+    predix_oauth_clientId : app_client_id:secret
+    #used by predix acs-spring-security-extensions
+    accessTokenEndpointUrl : https://6e13f008-7e1e-49b7-8699-21cf6ff03506.predix-uaa.run.aws-usw02-pr.ice.predix.io/oauth/token
+    clientId : app_client_id
+    clientSecret: secret
+    acsServiceInstanceName: tcs-smart-welding-acs

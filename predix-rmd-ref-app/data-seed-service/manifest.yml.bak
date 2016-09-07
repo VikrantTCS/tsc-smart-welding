@@ -1,0 +1,24 @@
+---
+applications:
+  - name: template-data-seed-service
+    buildpack: java_buildpack
+    path: target/data-seed-service-2.0.2.jar	
+    timeout: 120
+    services:
+      - Vikrant_Jagtap-asset
+      - Vikrant_Jagtap-uaa
+      - Vikrant_Jagtap-acs
+
+env:
+    predix_asset_name : Vikrant_Jagtap-asset
+    SPRING_PROFILES_ACTIVE : cloud,clouddev
+    predix_userName : app_admin_1
+    predix_password : app_admin_1
+    predix_oauth_restHost : 6da68232-c408-4237-bbe6-dd5df2a36fd3.predix-uaa.run.aws-usw02-pr.ice.predix.io
+    predix_oauth_restPort : 80
+    predix_oauth_clientId : app_client_id:secret
+    #used by predix acs-spring-security-extensions
+    accessTokenEndpointUrl : https://6da68232-c408-4237-bbe6-dd5df2a36fd3.predix-uaa.run.aws-usw02-pr.ice.predix.io/oauth/token
+    clientId : app_client_id
+    clientSecret: secret
+    acsServiceInstanceName: Vikrant_Jagtap-acs

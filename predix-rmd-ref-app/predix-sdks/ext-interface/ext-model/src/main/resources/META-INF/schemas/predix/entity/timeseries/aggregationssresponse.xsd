@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://predix.ge.com/entity/timeseries/aggregations"
+	elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:aggregations="http://predix.ge.com/entity/timeseries/aggregations"
+	xmlns:map="http://ge.com/predix/entity/util/map"
+	 >
+	
+	<import schemaLocation="../util/map/map.xsd" namespace="http://ge.com/predix/entity/util/map"></import>
+
+	<element name="AggregationsList">
+		<complexType>
+			<sequence>
+				<element name="results" type="map:Map" minOccurs="0" maxOccurs="unbounded"></element>    
+			</sequence>
+		</complexType>
+	</element>
+</schema>

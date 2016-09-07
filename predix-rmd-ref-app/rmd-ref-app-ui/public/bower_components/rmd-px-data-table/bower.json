@@ -1,0 +1,36 @@
+{
+  "name": "rmd-px-data-table",
+  "version": "0.0.1",
+  "main": [
+    "px-data-table.html"
+  ],
+  "ignore": [
+    ".*",
+    "npm-debug.log",
+    "Gruntfile.js",
+    "sass",
+    "bower_components",
+    "node_modules",
+    "test"
+  ],
+  "dependencies": {
+    "polymer": "~1.0.0",
+    "px-theme": "git://github.com/predixdev/px-theme.git#~0.3.5",
+    "google-analytics": "~0.1.0"
+  },
+  "devDependencies": {
+    "px-tables-design": "git://github.com/predixdev/px-tables-design.git#~0.3.0",
+    "iron-component-page": "PolymerElements/iron-component-page#~v1.0.0",
+    "px-starter-kit-design": "git://github.com/predixdev/px-starter-kit-design.git#~0.4.0",
+    "iron-ajax": "PolymerElements/iron-ajax#~1.0.3",
+    "px-layout-design": "https://github.com/predixdev/px-layout-design.git#~0.3.7",
+    "px-card": "https://github.com/predixdev/px-card.git#~0.0.8",
+    "px-spacing-design": "https://github.com/predixdev/px-spacing-design.git#~0.3.3",
+    "px-buttons-design": "https://github.com/predixdev/px-buttons-design.git#~0.4.9",
+    "px-forms-design": "https://github.com/predixdev/px-forms-design.git#~0.3.8",
+    "px-button-group-design": "https://github.com/predixdev/px-button-group-design.git#~0.3.6"
+  },
+  "resolutions": {
+    "polymer": "^1.1.0"
+  }
+}

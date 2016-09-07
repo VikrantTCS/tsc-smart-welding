@@ -1,0 +1,21 @@
+---
+applications:
+  - name: template-rmd-ref-app
+    buildpack: predix_openresty_buildpack
+    path: dist
+    memory: 64M
+    stack: cflinuxfs2
+    services:
+            - Vikrant_Jagtap-redis
+            - Vikrant_Jagtap-asset
+            - Vikrant_Jagtap-time-series
+            - Vikrant_Jagtap-uaa
+    env:
+      UAA_SERVER_URL: https://6da68232-c408-4237-bbe6-dd5df2a36fd3.predix-uaa.run.aws-usw02-pr.ice.predix.io
+      assetUrl: https://predix-asset.run.aws-usw02-pr.ice.predix.io
+      assetZoneId: 8e3b88ee-3faa-4ebe-a5f3-49ad2e907e8d
+      timeSeriesUrl: https://time-series-store-predix.run.aws-usw02-pr.ice.predix.io/v1/datapoints
+      timeSeriesZoneId: 6f684897-cb6a-45c8-8fa8-0ec48bed7031
+      predix_oauth_clientId : YXBwX2NsaWVudF9pZDpzZWNyZXQ=
+      RMD_DATASOURCE_URL: https://vikrant-jagtap-rmd-datasource.run.aws-usw02-pr.ice.predix.io
+      LIVE_DATA_WS_URL: wss://vikrant-jagtap-websocket-server.run.aws-usw02-pr.ice.predix.io

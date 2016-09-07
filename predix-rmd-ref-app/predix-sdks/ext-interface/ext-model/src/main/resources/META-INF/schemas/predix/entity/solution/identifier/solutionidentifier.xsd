@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema
+	targetNamespace="http://ge.com/predix/entity/solution/identifier/solutionidentifier"
+	elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:solutionIdentifier="http://ge.com/predix/entity/solution/identifier/solutionidentifier"
+	xmlns:identifier="http://ge.com/predix/entity/identifier">
+
+	<import schemaLocation="../../identifier/identifier.xsd" 
+		namespace="http://ge.com/predix/entity/identifier">
+	</import>
+	<complexType name="SolutionIdentifier">
+		<complexContent>
+			<extension base="identifier:Identifier"></extension>
+		</complexContent>
+	</complexType>
+	<element name="solutionIdentifier"
+		type="solutionIdentifier:SolutionIdentifier">
+	</element>
+
+	<complexType name="SolutionIdentifierList">
+		<sequence>
+			<element ref="solutionIdentifier:solutionIdentifier"
+				minOccurs="0" maxOccurs="unbounded">
+			</element>
+		</sequence>
+	</complexType>
+	<element name="solutionIdentifierList"
+		type="solutionIdentifier:SolutionIdentifierList" />
+
+</schema>

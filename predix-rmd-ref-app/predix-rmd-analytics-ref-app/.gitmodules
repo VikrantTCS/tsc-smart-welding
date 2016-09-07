@@ -1,0 +1,28 @@
+[submodule "rmd-orchestration"]
+	path = rmd-orchestration
+	url = https://github.com/predixdev/rmd-orchestration.git
+	branch = master
+[submodule "rmd-analytics"]
+	path = rmd-analytics
+	url = https://github.com/predixdev/rmd-analytics.git
+	branch = master
+[submodule "fdh-router-service"]
+	path = fdh-router-service
+	url = https://github.com/predixdev/fdh-router-service.git
+	branch = master
+[submodule "Predix-HelloWorld-WebApp"]
+	path = Predix-HelloWorld-WebApp
+	url = https://github.com/predixdev/Predix-HelloWorld-WebApp.git
+	branch = master
+[submodule "predix-scripts"]
+	path = predix-scripts
+	url = https://github.com/predixdev/predix-scripts.git
+	branch = master
+[submodule "predix-sdks"]
+	path = predix-sdks
+	url = https://github.com/predixdev/predix-sdks.git
+	branch = master
+[submodule "predix-rmd-ref-app"]
+	path = predix-rmd-ref-app
+	url = https://github.com/predixdev/predix-rmd-ref-app.git
+	branch = master

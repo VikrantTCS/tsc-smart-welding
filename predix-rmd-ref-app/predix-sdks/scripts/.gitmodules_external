@@ -1,0 +1,28 @@
+[submodule "ext-interface"]
+	path = ext-interface
+	url = http://github.com/PredixDev/ext-interface.git
+[submodule "asset-bootstrap"]
+	path = asset-bootstrap
+	url = http://github.com/PredixDev/asset-bootstrap.git
+[submodule "timeseries-bootstrap"]
+	path = timeseries-bootstrap
+	url = http://github.com/PredixDev/timeseries-bootstrap.git
+[submodule "predix-rest-client"]
+	path = predix-rest-client
+	url = http://github.com/PredixDev/predix-rest-client.git
+[submodule "predix-websocket-client"]
+	path = predix-websocket-client
+	url = http://github.com/PredixDev/predix-websocket-client.git
+[submodule "predix-microservice-cf-spring"]
+	path = predix-microservice-cf-spring
+	url = http://github.com/PredixDev/predix-microservice-cf-spring.git
+[submodule "predix-microservice-cf-jsr"]
+        path = predix-microservice-cf-jsr
+        url = http://github.com/PredixDev/predix-microservice-cf-jsr.git
+[submodule "rabbitmq-consumer-template"]
+        path = rabbitmq-consumer-template
+        url = http://github.com/PredixDev/rabbitmq-consumer-template.git
+[submodule "rabbitmq-producer-template"]
+        path = rabbitmq-producer-template
+        url = http://github.com/PredixDev/rabbitmq-producer-template.git
+

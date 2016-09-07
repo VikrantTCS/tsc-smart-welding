@@ -1,0 +1,10 @@
+---
+applications:
+  - name: template-machinedata-simulator
+    buildpack: java_buildpack
+    path: target/machinedata-simulator-4.0.2.jar
+    timeout: 120
+env:
+    machineControllerId: 1
+    predix_dataingestion_service_uri: https://vikrant-jagtap-dataingestion.run.aws-usw02-pr.ice.predix.io/saveTimeSeriesData
+    
